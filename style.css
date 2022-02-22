@@ -1,4 +1,41 @@
-h1 {
-  font-family: font-family: 'Gothic A1', sans-serif;
-  font-weight: 900;
+:root {
+  --h1-font-weight: 1000;
+  --h1-font-size: 55px;
+  --word-spacing: -5px;
+  --point-color: #4758b5;
+}
+
+body {
+  font-family: "Gothic A1", sans-serif;
+}
+
+.Mainbox1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+.introText {
+  font-weight: var(--h1-font-weight);
+  word-spacing: var(--word-spacing);
+  font-size: var(--h1-font-size);
+}
+
+.mainImg {
+  width: 40vw;
+}
+
+.PointColor {
+  color: var(--point-color);
+  font-size: 45px;
+}
+
+.backgroundBox {
+  height: 80vh;
+  width: 100vw;
+  background-color: var(--point-color);
+}
+
+.Mainbox2 {
 }
