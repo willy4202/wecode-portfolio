@@ -11,6 +11,8 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <!-- aos 라이브러리 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- 리셋 -->
     <link rel="stylesheet" href="style.css" />
     <!-- <link rel="stylesheet" href="reset.css" /> -->
@@ -27,14 +29,14 @@
     <!-- 메인 섹션 -->
     <div class="container Mainbox1">
       <div class="row">
-        <div class="col">
+        <div class="col-6">
           <h1 class="introText">
-            모난 세상도 <br />'원'하는 개발자<br />
+            모난 세상이 <br />'원'하는 개발자<br />
             <div class="PointColor">석영</div>
           </h1>
         </div>
-        <div class="col">
-          <img class="mainImg" src="./img/메인사진.jpg" alt="프로필사진" />
+        <div class="col-6">
+          <img class="mainImg" src="./img/메인사진 1.jpg" alt="프로필사진" />
         </div>
       </div>
     </div>
@@ -42,40 +44,206 @@
     <!-- 첫 섹션 -->
     <section class="container Mainbox2">
       <div class="row">
-        <div class="col-md-8 Quote_1">
-          “ 세상에 버그 없는 프로그램은 없습니다.<br />
+        <div 
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-easing="ease"
+          class="Quote_1">
+          “ 세상에 버그 없는 프로그램이 있을까요?<br />
           하물며 사람은 어떻겠어요?<br />
-          질책보단 포용이 더 큰 성장을 만들어 낼 수 있어요.
-          <div>- 류형규 전 카카오 CTO</div>
+          질책보단 포용이 더 큰 결과를 만들어 낼 수 있어요. ”
+          <div class="Quoter">- 류형규 전 카카오, 현 컬리 CTO</div>
         </div>
       </div>
-      <div class="Quote_2">
+      <div 
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        data-aos-easing="ease"
+        class="Quote_2">
         “ 저에게 10억을 주고 사업을 시작하라 했으면 망했을 거에요. <br />
         동료들이 있었기에 지금껏 할 수 있었죠. ”
-        <div>- 강동구 땡큐캠핑 대표</div>
+        <div class="Quoter">- 강동구 땡큐캠핑 CEO</div>
       </div>
     </section>
 
     <!-- 두 번째 섹션 -->
     <section>
-      <div class="backgroundBox"></div>
+      <div class="second_section_container">
+        <div class="backgroundBox">
+          <div class="box_text1">
+            협업 능력
+            <br />
+          </div>
+          <div class="box_text2 container">
+            <div class="row">
+              <div class="box_text2_first col-4">
+                <div class="btf2">저는 지금까지...</div>
+                <br />2021년 2월 기준
+              </div>
+              <div class="box_text2_line col-1"></div>
+              <div class="box_text2_second col-3">
+                함께한
+                <br />
+                해외 파견
+                <br />
+                스타트업 인터뷰
+                <br />
+                콘텐츠 조회수
+                <br />
+                당근마켓 온도
+              </div>
+              <div class="box_text3_third col-3">
+                164 명
+                <br />
+                4680 시간
+                <br />
+                87 명
+                <br />
+                458,000 회
+                <br />
+                40.8 ℃
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- 세 번째 섹션 -->
     <section>
       <div class="container">
-        <div class="col">row-cols-2</div>
+        <div 
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-easing="ease"
+        class="section3_text col-12">
+          위에서 언급한 숫자가 궁금하시다구요?
+        </div>
         <div class="row row-cols-2">
-          <div class="col">d</div>
-          <div class="col">2</div>
+          <div
+          data-aos="fade-right"
+          data-aos-duration="1000" 
+          class="section3_text1 col">
+            <div class="section3_text1_1">
+              <span class="PointColor">팀 워크</span>로 결과를 만든 경험
+            </div>
+            지금까지 10건이 넘는 프로젝트를 진행하며,<br />
+            <strong>164명</strong>에 가까운 동료들과 협업했어요!
+
+            <p class="section3_text3">
+              <br />
+               <프로젝트 목록> 
+              <ul>
+                <li>독립 문화 인식 개선 프로젝트 - 새롭게 일렁이다</li>
+                <li>지역신문 컨퍼런스 - 미래독자의 눈</li>
+                <li>보수동 책방골목 살리기 - 전국대학생광고 공모전</li>
+                <li>부산 대학 문화 살리기 프로젝트 - 노래하는 옥상</li>
+                <li>청소년 유해영상 방지 프로젝트 - Take해 </li>
+                <li>스타트업 CEO 및 현직자 <strong>87인</strong> 인터뷰 진행</li>
+              </ul>
+            </p>
+          </div>
+          <div class="section3_text2 col">
+            <div class="SECTION_SLIDE">
+              <input type="radio" name="slide" id="slide01" checked />
+              <input type="radio" name="slide" id="slide02" />
+              <input type="radio" name="slide" id="slide03" />
+              <input type="radio" name="slide" id="slide04" />
+              <input type="radio" name="slide" id="slide05" />
+              <input type="radio" name="slide" id="slide06" />
+              <div class="slidewrap">
+                <ul class="slidelist">
+                  <li>
+                    <a>
+                      <label for="slide06" class="left"></label>
+                      <img src="./img/포트폴리오1.png" alt="별의 춤 포스터" />
+                      <label for="slide02" class="right"> </label>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <label for="slide01" class="left"></label>
+                      <img src="./img/포트폴리오2.jpg" alt="컨퍼런스" />
+                      <label for="slide03" class="right"></label>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <label for="slide02" class="left"></label>
+                      <img src="./img/포트폴리오3.png" alt="광고" />
+                      <label for="slide04" class="right"></label>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <label for="slide03" class="left"></label>
+                      <img src="./img/포트폴리오4.png" alt="" />
+                      <label for="slide05" class="right"></label>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <label for="slide04" class="left"></label>
+                      <img src="./img/포트폴리오5.png" alt="" />
+                      <label for="slide06" class="right"></label>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <label for="slide05" class="left"></label>
+                      <img src="./img/포트폴리오 6-1.png" alt="" />
+                      <label for="slide01" class="right"></label>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+
+    <!-- 네 번째 섹션  -->
+    <section>
+      <div class="container">
+        <div 
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-easing="ease"
+        class="section3_text col-12">
+          또 다른 활동은요...!
+        </div>
+
+        <div class="section4 row row-cols-2">
+          <div class="col">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/PB_TmEqC7x4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="col">
+            <div class="section4_text">
+              <div class="section4_text1">스페인</div>
+                <div class="section4_text2">1032 시간 (43 일)</div>
+              <div class="section4_text1">우간다</div>
+                <div class="section4_text2">3648 시간 (152 일)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 다섯 번 쨰 섹션 -->
+    <section>
+
+    </section>
+    
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

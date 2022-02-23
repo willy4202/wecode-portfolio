@@ -3,39 +3,235 @@
   --h1-font-size: 55px;
   --word-spacing: -5px;
   --point-color: #4758b5;
+  --line-height: 5vh;
+}
+
+@font-face {
+  font-family: appleB;
+  src: url(../wecode-portfolio/font/AppleSDGothicNeoB.ttf);
+}
+
+@font-face {
+  font-family: appleL;
+  src: url(../wecode-portfolio/font/AppleSDGothicNeoL.ttf);
 }
 
 body {
-  font-family: "Gothic A1", sans-serif;
+  font-family: appleB;
 }
 
 .Mainbox1 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  margin-top: 20vh;
   height: 100vh;
 }
 
 .introText {
   font-weight: var(--h1-font-weight);
   word-spacing: var(--word-spacing);
-  font-size: var(--h1-font-size);
+  font-size: calc(var(--h1-font-size) * 1.7);
 }
 
 .mainImg {
-  width: 40vw;
+  justify-self: center;
+  align-self: center;
+  border-radius: 30px;
+  height: 60vh;
+  align-self: center;
 }
 
 .PointColor {
   color: var(--point-color);
-  font-size: 45px;
+  font-size: calc(var(--h1-font-size) * 2);
+}
+
+/* 섹션1 */
+.Mainbox2 {
+}
+
+.Quote_1 {
+  font-size: calc(var(--h1-font-size) / 2);
+  font-weight: calc(var(--h1-font-weight) * 0.6);
+  text-align: left;
+  letter-spacing: 0.5px;
+}
+
+.Quote_2 {
+  font-size: calc(var(--h1-font-size) / 2);
+  font-weight: calc(var(--h1-font-weight) * 0.7);
+  text-align: end;
+  margin-top: 10%;
+  letter-spacing: 0.5px;
+}
+
+.Quoter {
+  font-family: appleL;
+  font-size: calc(var(--h1-font-size) / 2.6);
+}
+
+/* 섹션2 */
+.second_section_container {
+  color: white;
+}
+
+.box_text2 {
+  margin-top: 5%;
 }
 
 .backgroundBox {
+  margin-top: 20%;
   height: 80vh;
   width: 100vw;
   background-color: var(--point-color);
 }
+.box_text1 {
+  text-align: center;
+  font-size: calc(var(--h1-font-size) / 1.7);
+  padding: 15vh 0 6vh 0;
+}
 
-.Mainbox2 {
+.box_text2_first {
+  text-align: center;
+  height: auto;
+  align-self: center;
+}
+
+.btf2 {
+  font-size: calc(var(--h1-font-size) / 2);
+}
+
+.box_text2_line {
+  margin-right: 5%;
+  height: 30vh;
+  border-right: 1px solid white;
+}
+
+.box_text2_second {
+  color: rgb(199, 199, 199);
+  align-self: center;
+  line-height: calc(var(--line-height) * 1.3);
+  font-size: calc(var(--h1-font-size) / 2.5);
+}
+
+.box_text3_third {
+  align-self: center;
+  text-align: end;
+  padding-right: 7vw;
+  line-height: calc(var(--line-height) * 1.3);
+  font-size: calc(var(--h1-font-size) / 1.7);
+  font-weight: var(--h1-font-weight);
+}
+
+/* 섹션3 */
+.section3_text {
+  text-align: center;
+  margin: 30vh 0 30vh 0;
+  font-size: calc(var(--h1-font-size) / 1.7);
+}
+
+.section3_text1_1 .PointColor {
+  font-size: calc(var(--h1-font-size) / 1.2);
+}
+
+.section3_text1_1 {
+  font-size: calc(var(--h1-font-size) / 1.4);
+  font-weight: 700;
+}
+
+.section3_text1 {
+  align-self: center;
+  font-size: calc(var(--h1-font-size) / 2);
+}
+
+.section3_text1 li {
+  font-size: 20px;
+}
+
+/* 섹션3 슬라이드 */
+
+.SECTION_SLIDE input[id*="slide"] {
+  display: none;
+}
+
+.SECTION_SLIDE .slidewrap {
+  width: 25vw;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+}
+
+.SECTION_SLIDE .slidelist {
+  white-space: nowrap;
+  padding: 0;
+}
+
+.SECTION_SLIDE .slidelist > li {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.SECTION_SLIDE .slidelist > li > a {
+  display: block;
+  position: relative;
+}
+
+.SECTION_SLIDE .slidelist > li > a img {
+  width: 90%;
+}
+
+.SECTION_SLIDE .slidelist label {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 30px;
+  cursor: pointer;
+}
+.SECTION_SLIDE .slidelist .left {
+  background-color: gray;
+  opacity: 20%;
+}
+
+.SECTION_SLIDE .slidelist .right {
+  right: 50px;
+  background-color: gray;
+  opacity: 20%;
+}
+
+.SECTION_SLIDE [id="slide01"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(0%);
+}
+.SECTION_SLIDE [id="slide02"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-100%);
+}
+.SECTION_SLIDE [id="slide03"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-200%);
+}
+.SECTION_SLIDE [id="slide04"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-300%);
+}
+.SECTION_SLIDE [id="slide05"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-400%);
+}
+.SECTION_SLIDE [id="slide06"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-500%);
+}
+
+/* 섹션 4 */
+.section4 {
+  height: 70vh;
+}
+.section4_text {
+  text-align: center;
+  justify-content: start;
+}
+
+.section4_text1 {
+  font-size: calc(var(--h1-font-size) / 2);
+}
+
+.section4_text2 {
+  font-size: calc(var(--h1-font-size) / 1.5);
 }
